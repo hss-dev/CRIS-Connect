@@ -1,0 +1,38 @@
+{
+  "name": "ConnectDemo",
+  "version": "1.0.2",
+  "description": "CRIS Reporting PACS Viewer application",
+  "main": "resources/app/main.js",
+  "config": {},
+  "scripts": {
+    "start": "electron resources/app/main.js",
+    "clean": "rm -rf dist",
+    "clean:win32": "rm -rf dist/CRIS-Reporting-PACS-Viewer-win32-ia32",
+    "clean:win64": "rm -rf dist/CRIS-Reporting-PACS-Viewer-win32-x64",
+    "pack:win32": "npm run clean:win32 && electron-packager resources/app CRIS-Reporting-PACS-Viewer --platform win32 --arch ia32 --app-version 1.0.2 --version-string.CompanyName=\"Healthcare Software Solutions\" --version-string.ProductName=\"CRIS Reporting PACS Viewer\" --icon resources/app/images/desktop-icon.ico  --out dist/",
+    "pack:win64": "npm run clean:win64 && electron-packager resources/app CRIS-Reporting-PACS-Viewer --platform win32 --arch x64 --app-version 1.0.2 --version-string.CompanyName=\"Healthcare Software Solutions\" --version-string.ProductName=\"CRIS Reporting PACS Viewer\" --icon resources/app/images/desktop-icon.ico  --out dist/"
+  },
+  "files": [
+    "resources/app/main.js",
+    "resources/app/express.js",
+    "resources/app/preload.js"
+  ],
+  "keywords": [
+    "Webplank",
+    "CRIS Reporting",
+    "PACS",
+    "Viewer",
+    "Electron"
+  ],
+  "author": "Healthcare Software Solutions",
+  "dependencies": {
+    "electron": "1.7.5",
+    "electron-packager": "8.5.1"
+  },
+  "devDependencies": {
+    "electron": "^1.7.5",
+    "electron-config": "^1.0.0",
+    "express": "^4.15.3",
+    "express-ws": "^3.0.0"
+  }
+}

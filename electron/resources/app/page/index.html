@@ -1,0 +1,54 @@
+<html>  
+    <title>CRIS Connect</title>  
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <link href="fonts/font.css" rel="stylesheet">
+    </head>
+    <body>
+        <main class="container">
+
+            <div class="row header-row block">
+                <h1>CRIS Connect Demo</h1>
+            </div>
+            <div class="row spacer2"></div>
+
+            <div class="row">
+                <div class="col-xs-6 block-height block" id="col1">
+                    <div>
+                        <h2>Incoming <img src="./img/lnr-arrow-right.svg" class="arrow"/></h2>
+                        <div class="jsonpayload">
+                            <label>JSON Payload</label>
+                            <div class="incoming" id="incoming-json"></div>
+                        </div>
+                        <div class="dashbox">
+                            <h5>Implementation</h5>
+                            <div class="incoming-maps-to" id="incomingmapstodiv"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-6 block block-height" id="col2">
+                    <div>
+                        <h2>Outgoing <img src="./img/lnr-arrow-right.svg" class="arrow"></h2>
+                        <div class="dashbox">
+                            <h5>Implementation</h5>
+                            <input type="button" class="btn btn-secondary" id="displayCommand" value="SHOW_REQUEST"/>
+                            <input type="button" class="btn btn-secondary" id="clearCommand" value="CLEAR_DISPLAY"/>
+                            <div>
+                                <div class="jsonpayload2">Map to JSON Payload</div>
+                                <textarea id="outgoing" class="text-area-change"></textarea>
+                            </div>
+                            <input type="button" class="btn btn-primary" id="executeCommand" value="Send to CRIS Reporting"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        	
+    </body>
+</html>
