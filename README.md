@@ -10,10 +10,11 @@ NB. accession is described as a list [] of accession numbers.
 *Commands
 When the following list details what command will be sent when an event has in CRIS Reporting:
 
-    Report opened   - "EVENT" command will be sent with accession, examCode, nhs and chi fields if available
+    Report opened                       - "EVENT" command will be sent with accession, 
+                                           examCode, nhs and chi fields if available
     Report saved (verified or finished) - "COMMIT" and "RELEASE" commands will be sent with accession
-    Log in - "LOGIN" command with no other fields.
-    Log out - "LOGOUT" command with no other fields.
+    Log in                              - "LOGIN" command with no other fields.
+    Log out                             - "LOGOUT" command with no other fields.
     Report skipped, canceled or exits   - "RELEASE" commands will be sent with accession.
     A single exam's report is selected  - "EVENT" command will be sent with accession,
                                            examCode, nhs and chi fields if available
