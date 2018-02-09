@@ -8,7 +8,9 @@ CRIS Connect is implemented via a websocket. The messages over the socket are in
 
 NB. accession is described as a list [] of accession numbers.
 
+
 *Commands*
+
 When the following list details what command will be sent when an event has in CRIS Reporting:
 
     Report opened                       - "EVENT" command will be sent with accession, 
