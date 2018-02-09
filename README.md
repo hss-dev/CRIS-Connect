@@ -14,9 +14,11 @@ When the following list details what command will be sent when an event has in C
     Report saved (verified or finished) - "COMMIT" and "RELEASE" commands will be sent with accession
     Log in - "LOGIN" command with no other fields.
     Log out - "LOGOUT" command with no other fields.
-    Report skipped, canceled or exits - "RELEASE" commands will be sent with accession.
-    A single exam's report is selected  - "EVENT" command will be sent with accession, examCode, nhs and chi fields if available
-    A historic report is opened - "READONLY" command will be sent with accession, examCode, nhs and chi fields if available
+    Report skipped, canceled or exits   - "RELEASE" commands will be sent with accession.
+    A single exam's report is selected  - "EVENT" command will be sent with accession,
+                                           examCode, nhs and chi fields if available
+    A historic report is opened         - "READONLY" command will be sent with accession, 
+                                           examCode, nhs and chi fields if available
 
 From PACS to CRIS Reporting
 
