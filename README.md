@@ -1,6 +1,7 @@
 # CRIS Connect Specification
 
 *Overview*
+----------
 
 CRIS Connect is implemented via a websocket. The messages over the socket are in JSON format and are bi-directional and contains the following
 
@@ -10,7 +11,7 @@ NB. accession is described as a list [] of accession numbers.
 
 
 *Commands*
-
+----------
 CRIS Reporting to PACS: When these events happens in CRIS Reporting it will send the following commands:
 
     Report opened                       - "EVENT" command will be sent with accession, 
