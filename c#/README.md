@@ -36,8 +36,8 @@ Have you generated your own public self certificate as described in the code?
 If you are accessing CRIS Reporting from Chrome then you may need to *accept the certificate authorisation* by browsing to
 https://localhost:9998 . This should not happen in electron due to a --ignore-certificate-errors switch, which could be run in chrome.
 
-2. CRIS Reporting has CRIS Connect turned off
----------------------------------------------
+2.CRIS Reporting has CRIS Connect turned off
+--------------------------------------------
 A simple postgres query can turn it on again, contact HSS.
 
 
