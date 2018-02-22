@@ -25,11 +25,11 @@ If CRIS Reporting is not connecting two common problems are:
 
 1.No or untrusted certificate
 -----------------------------
-This could manifest it self in CRIS Reporting showing a red banner such as "HSS DTI service unreachable".
+This could manifest itself in CRIS Reporting showing a red banner such as "HSS DTI service unreachable".
 
 Have you generated your own public self certificate as described in the code?
 
-- Look at [DemoForm.cs](https://github.com/hss-dev/CRIS-Connect/blob/master/c%23/PACSRISIntegrationDemo/PACSRISIntegrationDemo/DemoForm.cs)
+If not look at [DemoForm.cs](https://github.com/hss-dev/CRIS-Connect/blob/master/c%23/PACSRISIntegrationDemo/PACSRISIntegrationDemo/DemoForm.cs) to see the details of certificate it expects:
 * Line 78 - location of certificate file
 * Line 87 - to the password of your choice
 
