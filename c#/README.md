@@ -23,7 +23,7 @@ CRISConnectDemo.exe -port 8000
 =========
 If CRIS Reporting is not connecting two comoon problems are:
 
-No or untruested certificate
+No or untrusted certificate
 ----------------------------
 This could manifest it self in CRIS Reporting showing a red banner such as "HSS DTI service unreachable".
 
@@ -31,10 +31,10 @@ Have you generated your own public self certificate as described in the code?
 
 - Look at [https://github.com/hss-dev/CRIS-Connect/blob/master/c%23/PACSRISIntegrationDemo/PACSRISIntegrationDemo/DemoForm.cs]
 * Line 78 - location of certificate file
-* Line 87 to the password of your choice
+* Line 87 - to the password of your choice
 
 If you are accessing CRIS Reporting from Chrome then you may need to *accept the certificate authorisation* by browsing to
-https://localhost:9998 
+https://localhost:9998 . This should not happen in electron due to a --ignore-certificate-errors switch, which could be run in chrome.
 
 
 
