@@ -27,7 +27,7 @@ No or untrusted certificate
 ----------------------------
 This could manifest it self in CRIS Reporting showing a red banner such as "HSS DTI service unreachable".
 
-Have you generated your own public self certificate as described in the code?
+1. Have you generated your own public self certificate as described in the code?
 
 - Look at [DemoForm.cs](https://github.com/hss-dev/CRIS-Connect/blob/master/c%23/PACSRISIntegrationDemo/PACSRISIntegrationDemo/DemoForm.cs)
 * Line 78 - location of certificate file
@@ -36,7 +36,7 @@ Have you generated your own public self certificate as described in the code?
 If you are accessing CRIS Reporting from Chrome then you may need to *accept the certificate authorisation* by browsing to
 https://localhost:9998 . This should not happen in electron due to a --ignore-certificate-errors switch, which could be run in chrome.
 
-
+2. CRIS Reporting has CRIS Connect turned off, a simple postgres query can turn it on again, contact HSS.
 
 
 
