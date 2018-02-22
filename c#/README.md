@@ -29,7 +29,7 @@ This could manifest it self in CRIS Reporting showing a red banner such as "HSS 
 
 Have you generated your own public self certificate as described in the code?
 
-- Look at [https://github.com/hss-dev/CRIS-Connect/blob/master/c%23/PACSRISIntegrationDemo/PACSRISIntegrationDemo/DemoForm.cs]
+- Look at [https://github.com/hss-dev/CRIS-Connect/blob/master/c%23/PACSRISIntegrationDemo/PACSRISIntegrationDemo/DemoForm.cs](DemoForm.cs)
 * Line 78 - location of certificate file
 * Line 87 - to the password of your choice
 
