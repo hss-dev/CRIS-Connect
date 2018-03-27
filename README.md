@@ -34,4 +34,4 @@ PACS to CRIS Reporting: When following commands are received CRIS Reporting reca
 
 *FAQ*
 ----------
-**What port is CRIS Connect using by default** 9998
+**What port is CRIS Connect using by default?** 9998
