@@ -2,12 +2,13 @@
 
 *Overview*
 ----------
+To integrate with CRIS Reporting is done by a simple [webSocket](https://en.wikipedia.org/wiki/WebSocket webs). Websockets are very common and have been implemented in all modern programming languages making it very easy for any PACS vendor to implement. Please find here some examples (.net, electron) of how this could be done.  
 
-CRIS Connect is implemented via a websocket. The messages over the socket are in JSON format and are bi-directional and contains the following
+The messages over the socket are in JSON format and are bi-directional and contains the following
 
     {command, accession, examCode, nhs, chi, username, password}
 
-NB. accession is described as a list [] of accession numbers.
+NB. *accession* is described as a list [] of accession numbers.
 
 
 *Commands*
