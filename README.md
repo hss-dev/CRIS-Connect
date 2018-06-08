@@ -2,7 +2,8 @@
 
 *Overview*
 ----------
-To integrate with CRIS Reporting is done by a simple [webSocket](https://en.wikipedia.org/wiki/WebSocket webs). Websockets are very common and have been implemented in all modern programming languages making it very easy for any PACS vendor to implement. Please find here some examples (.net, electron) of how this could be done.  
+To integrate with CRIS Reporting is done by a simple [websocket](https://en.wikipedia.org/wiki/WebSocket)
+. Websockets are very common and have been implemented in all modern programming languages making it very easy for any PACS vendor to implement. Please find here some examples (.net, electron) of how this could be done.  
 
 The messages over the socket are in JSON format and are bi-directional and contains the following
 
