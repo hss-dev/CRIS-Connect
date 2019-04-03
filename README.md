@@ -3,9 +3,11 @@
 ## Demo
 
 #### Running CRIS-Connect
+You can run the executable directly, or through the command line. If it doesn't run, you most likely do not have a .pfx certificate. To generate one please follow step 2 of the c# readme.md https://github.com/hss-dev/CRIS-Connect/blob/master/c%23/README.md 
 ![](/electron/readme-gifs/runningcrisconnect.gif)
 <br/><br/><br/>
 #### Enabling CRIS-Connect
+Integration and CRIS Connect must be enabled and then the port must be set (default 9998)
 ![](/electron/readme-gifs/enablingcrisconnect.gif)
 <br/><br/><br/>
 #### Opening a report
@@ -15,6 +17,7 @@
 ![](/electron/readme-gifs/clearingreport.gif)
 <br/><br/><br/>
 #### Requesting a report
+For requesting a report to work, the client must already be in a reporting screen.
 ![](/electron/readme-gifs/requestingreport.gif)
 
 *Overview*
