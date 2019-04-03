@@ -2,18 +2,20 @@
 
 ## Getting Started
 
-Clone the repository
+This is a short guide on how to download, install and run CRIS-Connect.
+
+**1)** Clone the repository
 
 ![](readme-gifs/1clonerepo.gif)
 
-Install the dependencies using NPM
+**2)** Install the dependencies using NPM
 
 ![](readme-gifs/2npmi.gif)
 
-Start the server using 'npm start'
+**3)** Start the server using 'npm start'
 
 ![](readme-gifs/3npmstart.gif)
 
-If you are accessing CRIS Reporting from Chrome then you may need to accept the certificate authorisation by browsing to https://localhost:9998
+**4)** If you are accessing CRIS Reporting from Chrome then you may need to accept the certificate authorisation by browsing to https://localhost:9998
 
 ![](readme-gifs/4chromeacceptcert.gif)
