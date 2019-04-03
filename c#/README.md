@@ -17,7 +17,9 @@ In your terminal navigate to */programdata/hss*
 **Generate the self signed certificate:** *openssl req -x509 -days 1000 -new -key private.pem -out public.pem*
 
 **Create PFX:** *openssl pkcs12 -export -in public.pem -inkey private.pem -out crisconnect.pfx*
+
 When prompted for an export password enter: 1234
+![](../electron/readme-gifs/generatingpfx.gif)
 
 **3)** Run the executable at *CRIS-Connect\c#\PACSRISIntegrationDemo\PACSRISIntegrationDemo\bin\Debug* 
 
