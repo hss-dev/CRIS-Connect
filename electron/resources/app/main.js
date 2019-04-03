@@ -51,7 +51,6 @@ function initApp() {
 }
 
 function initConfig() {
-
     console.log("using config file @ " + config.path);
     if (!config.has(DTI_WEB_SOCKET_PORT)) {
         console.log("adding default for DTI_WEB_SOCKET_PORT");
@@ -64,6 +63,10 @@ function initConfig() {
     if (!config.has(DTI_CERT_PATH)) {
         console.log("adding default for DTI_CERT_PATH");
         config.set(DTI_CERT_PATH, path.join(__dirname, 'server.crt'));
+    }
+    if (!config.has(USE_SECURE_WEBSOCKET)) {
+        console.log("adding default for USE_SECURE_WEBSOCKET");
+        config.set(USE_SECURE_WEBSOCKET, true);
     }
 }
 
