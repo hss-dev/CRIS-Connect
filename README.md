@@ -1,5 +1,22 @@
 # CRIS Connect Specification
 
+## Demo
+
+#### Running CRIS-Connect
+![](/electron/readme-gifs/runningcrisconnect.gif)
+<br/><br/><br/>
+#### Enabling CRIS-Connect
+![](/electron/readme-gifs/enablingcrisconnect.gif)
+<br/><br/><br/>
+#### Opening a report
+![](/electron/readme-gifs/openingreport.gif)
+<br/><br/><br/>
+#### Clearing a report
+![](/electron/readme-gifs/clearingreport.gif)
+<br/><br/><br/>
+#### Requesting a report
+![](/electron/readme-gifs/requestingreport.gif)
+
 *Overview*
 ----------
 To integrate with CRIS Reporting is done by a simple [websocket](https://en.wikipedia.org/wiki/WebSocket)
