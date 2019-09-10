@@ -7,7 +7,7 @@ You can run the executable directly, or through the command line. If it doesn't 
 ![](/electron/readme-gifs/runningcrisconnect.gif)
 <br/><br/><br/>
 #### Enabling CRIS-Connect
-Integration and CRIS Connect must be enabled and then the port must be set (default 9998)
+Integration and CRIS Connect must be enabled and then the port must be set (default 56998 or 56996)
 ![](/electron/readme-gifs/enablingcrisconnect.gif)
 <br/><br/><br/>
 #### Opening a report
@@ -57,4 +57,4 @@ PACS to CRIS Reporting: When following commands are received CRIS Reporting reca
 
 *FAQ*
 ----------
-**What port is CRIS Connect using by default?** 9998
+**What port is CRIS Connect using by default?** 56998 or 56996
