@@ -47,6 +47,8 @@ CRIS Reporting to PACS: When these events happens in CRIS Reporting it will send
                                            examCode, nhs and chi fields if available
     A historic report is opened         - "READONLY" command will be sent with accession, domain,  
                                            examCode, nhs and chi fields if available
+    Request PACS prefetch images        - "PREFETCH" command will be sent with accession numbers, domain 
+                                           examCode, nhs and chi fields if available
                                            
 PACS to CRIS Reporting: When following commands are received CRIS Reporting recact in these ways:
 
