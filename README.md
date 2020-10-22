@@ -27,7 +27,7 @@ To integrate with CRIS Reporting is done by a simple [websocket](https://en.wiki
 
 The messages over the socket are in JSON format and are bi-directional and contains the following
 
-    {command, domain, accession, examCode, nhs, chi, username, password}
+    {command, domain, accession, examCode, nhs, chi, username, password, remoteImage}
 
 NB. *accession* is described as a list [] of accession numbers.
 
@@ -37,9 +37,11 @@ NB. *accession* is described as a list [] of accession numbers.
 CRIS Reporting to PACS: When these events happens in CRIS Reporting it will send the following commands:
 
     Report opened                       - "EVENT" command will be sent with accession, domain 
-                                           examCode, nhs and chi fields if available
+                                           examCode, nhs and chi fields if available, also remoteImage
+                                           (boolean) can be set if the image is remote.
     Report saved (verified or finished) - "COMMIT" and "RELEASE" commands will be sent with accession
-                                           and domain
+                                           and domain, also remoteImage (boolean) can be set if the 
+                                           image is remote.
     Log in                              - "LOGIN" command with domain 
     Log out                             - "LOGOUT" command with domain.
     Report skipped, canceled or exits   - "RELEASE" commands will be sent with accession and domain.
@@ -49,6 +51,8 @@ CRIS Reporting to PACS: When these events happens in CRIS Reporting it will send
                                            examCode, nhs and chi fields if available
     Request PACS prefetch images        - "PREFETCH" command will be sent with accession numbers, domain 
                                            examCode, nhs and chi fields if available
+                                         
+                                           
                                            
 PACS to CRIS Reporting: When following commands are received CRIS Reporting recact in these ways:
 
