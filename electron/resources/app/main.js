@@ -54,7 +54,7 @@ function initConfig() {
     console.log("using config file @ " + config.path);
     if (!config.has(DTI_WEB_SOCKET_PORT)) {
         console.log("adding default for DTI_WEB_SOCKET_PORT");
-        config.set(DTI_WEB_SOCKET_PORT, 9998);
+        config.set(DTI_WEB_SOCKET_PORT, 56998);
     }
     if (!config.has(DTI_KEY_PATH)) {
         console.log("adding default for DTI_KEY_PATH");
