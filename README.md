@@ -50,17 +50,19 @@ CRIS Reporting to PACS: When these events happens in CRIS Reporting it will send
     A historic report is opened         - "READONLY" command will be sent with accession, domain,  
                                            examCode, nhs and chi fields if available
     Request PACS prefetch images        - "PREFETCH" command will be sent with accession numbers, domain 
-                                           examCode, nhs and chi fields if available
+                                           examCode, nhs and chi fields if available **
                                          
                                            
                                            
-PACS to CRIS Reporting: When following commands are received CRIS Reporting recact in these ways:
+PACS to CRIS Reporting: When following commands are received CRIS Reporting react in these ways:
 
     "DISPLAY" - Displays a report. Expects accession to be populated
     "CLEAR" - Clears a report and return to worklist. Expects no other fields.
     "LOGOUT" -  Log out of CRIS Reporting. Expects no other fields.
     "LOGIN" - Log in to CRIS Reporting. Expects username and password to be populated
-    "FETCHED" - A message to confirm an image has been feteched. Expects accession to be populated
+    "FETCHED" - A message to confirm an image has been feteched. Expects accession to be populated **
+    
+** Future implementation    
 
 *FAQ*
 ----------
