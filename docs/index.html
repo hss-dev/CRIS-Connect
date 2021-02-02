@@ -16,8 +16,14 @@
                     = urlParams.get('accession');
             console.log('Accession is', accession);
             const acc = document.getElementById('accession');
-            acc.innerHTML=accession;
-
+            if (accession){
+               acc.innerHTML=accession;
+            } else {
+               const label = document.getElementById('label');
+               label.innerHTML = 'Clear';
+               acc.innerHTML='Context';
+            }
     </script>
+
     <link rel="stylesheet" href="styles.css">
 </html>
