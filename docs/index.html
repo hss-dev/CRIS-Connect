@@ -1,0 +1,23 @@
+<html>
+
+    <head>
+        <div class='big'> -- F A K E &nbsp;&nbsp;  P A C S -- </div>
+    </head>
+
+    <body>
+            <h1> <div class=oneline> <div id=label>Requesting image for</div> <div id=accession></div> </div></h1>
+    </body>
+
+    <script>
+            const queryString = window.location.search;
+            console.log(queryString);
+            const urlParams = new URLSearchParams(queryString);
+            const accession
+                    = urlParams.get('accession');
+            console.log('Accession is', accession);
+            const acc = document.getElementById('accession');
+            acc.innerHTML=accession;
+
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</html>

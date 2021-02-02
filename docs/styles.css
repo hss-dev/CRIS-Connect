@@ -1,0 +1,21 @@
+.big {
+   font-size: 100px;
+   text-align: center;
+   color: teal;
+}
+
+.oneline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+   font-size: 100px;
+}
+
+body {
+    background: black;
+}
