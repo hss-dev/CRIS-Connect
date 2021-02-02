@@ -11,10 +11,15 @@
     <script>
             const queryString = window.location.search;
             console.log(queryString);
-            const urlParams = new URLSearchParams(queryString);
-            const accession
-                    = urlParams.get('accession');
-            console.log('Accession is', accession);
+            var accession;
+            try {
+                const urlParams = new URLSearchParams(queryString);
+                accession = urlParams.get('accession');
+            } catch (err){
+                console.error(err);
+                accession = queryString.substring(11,queryString.length);    
+            }
+           console.log('Accession is', accession);
             const acc = document.getElementById('accession');
             if (accession){
                acc.innerHTML=accession;
